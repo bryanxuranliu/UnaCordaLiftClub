@@ -1,0 +1,136 @@
+<html> 
+
+	<head> 
+		<title> Una Corda Lift Club </title>
+	</head>
+	<body>
+		<h1> Una Corda Lift Club </h1>
+		<p> <I> For Information Regarding Fitness, Nutrition, and Strategies for a Healthy Lifestyle </I>
+	
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Research Articles')" id="defaultOpen">Research Articles</button>
+  <button class="tablinks" onclick="openCity(event, 'Calculators')">Calculators</button>
+  <button class="tablinks" onclick="openCity(event, 'Helpful Videos')">Helpful Videos</button>
+  <button class="tablinks" onclick="openCity(event, 'About Us')">About Us</button>
+</div>
+
+<div id="Research Articles" class="tabcontent">
+   <h3></h3>
+<p> <b> How Much Strength Do You Lose On a Cut? </b> </p>
+
+</div>
+
+<div id="Calculators" class="tabcontent">
+  <h3>Disclaimer: calculators pertaining to recommended intake of X are not a substitute for the advise of a personal doctor or nutritionist. There is no way a single calculator can output values accurate enough for the general population. Always consult expert advise.</h3>
+
+  <p> 
+	<br> <b> Body Mass Index </b> </br>
+	<fieldset>
+		<legend> BMI calculator </legend>
+ <form oninput="res.value= (parseInt(b.value) / parseInt(a.value * a.value)) * 703;">  
+    <label>Enter your height (inches)</label><br>  
+    <input type="number" name="a" value=""/><br>  
+    <br/>  
+    <label>Enter your weight (lbs)</label><br>   
+    <input type="number" name="b" value=""><br> <br> 
+    Here's your BMI: <output name="res"></output>  
+</form>  
+</fieldset> <br>
+</p>
+<p>
+what is BMI?<br> <br>
+Your <I> Body Mass Index </I>(BMI) is an anthropometric index of weight and height, and is the commonly accepted index for classifying adiposity (the amount of fat in the body). Despite its universal popularity, it is not a good single indicator of excess fat, as further assessment is needed (such as body-fat percentage). The BMI calculation is the same across both sexes for adults, but not for children and teenagers. Please only refer to the above calculator if you are 21 or older. <br> <br>
+
+<table>
+<tr>
+<th>BMI</th>
+<th>Classification</th>
+</tr> <tr>
+<td> < 18.5</td> <td>Underweight</td>
+  </tr>
+  <tr class="even">
+<td>18.5 - 24.9</td> <td>Normal/Healthy Weight</td>
+</tr> <tr>
+<td>25 - 29.9</td>    <td>Overweight</td>
+  </tr>
+  </tr>
+<td> 30+ </td> <td>Obese</td>
+</tr>
+</table>
+
+<style>
+body {
+  font-family: Arial, Verdana, sans-serif;
+  color: #111111;}
+table {
+  width: 600px;}
+th, td {
+  padding: 7px 10px 10px 10px;}
+th {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 90%;
+  border-bottom: 2px solid #111111;
+  border-top: 1px solid #999;
+  text-align: left;}
+tr.even {
+  background-color: #efefef;}
+tr:hover {
+  background-color: #c3e6e5;}
+</style>
+</p> 	
+
+<p>
+
+	<br> <b> Basal Metabolic Rate </b> </br>
+	<fieldset>
+		<legend> BMR calculator </legend>
+ <form oninput="rez.value= parseInt(z.value) * (4.799 * (1/2.20462) * parseInt(c.value) + 13.397 * (1/.393701)*parseInt(d.value) - (5.677 * parseInt(bb.value) + 88.362) + parseInt(aa.value) * (3.098 * (1/2.20462) * parseInt(c.value) + 9.247 * (1/.393701)*parseInt(d.value) - (4.330 * parseInt(bb.value) + 447.593) ) ;">  
+    <label>If you are a female, enter "1" in this box and "0" in the next box</label><br> 
+    <input type="number" name="aa" value=""/><br>  <br>
+    <label>If you are a male, enter "1" in this box and "0" in the previous box</label><br> 
+    <input type="number" name="z" value=""/><br>  <br>
+    <label>Enter your age </label><br>  
+    <input type="number" name="bb" value=""/><br>  
+    <br/>  
+    <label>Enter your height (inches)</label><br>  
+    <input type="number" name="c" value=""/><br> <br>
+    <label>Enter your weight (lbs)</label><br>   
+    <input type="number" name="d" value=""><br> <br> 
+    Here's your BMR: <output name="rez"></output>  
+</form>  
+</fieldset> <br>
+
+</div>
+</p>
+<div id="Helpful Videos" class="tabcontent">
+  <h3><I> coming soon! </I></h3>
+  <p></p>
+</div>
+
+<div id="About Us" class="tabcontent">
+  <h3>The Team</h3>
+  <p>We are a group of college-graduates with a shared passion for lifting, fitness, and Korean barbecue.</p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+			 </p>
+	</body> 
+</html>  
